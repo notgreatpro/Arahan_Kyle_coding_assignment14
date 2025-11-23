@@ -13,7 +13,7 @@ test('renders navigation links', () => {
   // Use getByRole to specifically target navigation links
   const aboutLink = screen.getByRole('link', { name: /About/i });
   const workLink = screen.getByRole('link', { name: /^Work$/i });
-  const skillsLink = screen.geole('link', { name: /Skills/i });
+  const skillsLink = screen.getByRole('link', { name: /Skills/i });
   expect(aboutLink).toBeInTheDocument();
   expect(workLink).toBeInTheDocument();
   expect(skillsLink).toBeInTheDocument();
