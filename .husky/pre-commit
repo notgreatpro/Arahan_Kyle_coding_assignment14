@@ -1,17 +1,15 @@
-#!/usr/bin/env sh
-. "$(dirname -- "$0")/_/husky.sh"
+#!/usr/bin/env bash
+. "$(dirname "$0")/_/husky.sh"
 
-echo "🔍 Running pre-commit checks..."
+echo "🔍 Running lint, prettier, and tests before commit..."
 
-cd kyle_arahan_final_site
+# Run lint and fail immediately if it fails
+npm run lint || { echo "❌ ESLint failed!"; exit 1; }
 
-# Run lint-staged
-npx lint-staged
+# Run prettier check and fail immediately if it fails
+npm run format:check || { echo "❌ Prettier check failed! Run 'npm run format'"; exit 1; }
 
-# Check if lint-staged passed
-if [ $? -ne 0 ]; then
-  echo "❌ Pre-commit checks failed. Please fix the errors and try again."
-  exit 1
-fi
+# Run tests and fail immediately if they fail
+npm test -- --watchAll=false || { echo "❌ Tests failed!"; exit 1; }
 
-echo "✅ Pre-commit checks passed!"
+echo "✅ All pre-commit checks passed!"
