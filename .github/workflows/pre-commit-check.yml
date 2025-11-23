@@ -1,0 +1,60 @@
+name: Pre-commit Checks
+
+on:
+  push:
+    branches: [ '**' ]
+
+jobs:
+  pre-commit:
+    name: Pre-commit Validation
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+          cache-dependency-path: kyle_arahan_final_site/package-lock.json
+
+      - name: Install dependencies
+        working-directory: ./kyle_arahan_final_site
+        run: npm ci
+
+      - name: Check for sensitive data
+        run: |
+          echo "Checking for potential secrets..."
+          if grep -r -E "(password|secret|api_key|token).*=.*['\"].*['\"]" --exclude-dir=node_modules --exclude-dir=.git .; then
+            echo "⚠️ Warning: Potential sensitive data found"
+            exit 1
+          fi
+
+      - name: Validate package-lock.json
+        working-directory: ./kyle_arahan_final_site
+        run: |
+          npm audit --audit-level=high
+          if [ $? -ne 0 ]; then
+            echo "⚠️ Security vulnerabilities found"
+            exit 1
+          fi
+
+      - name: Run Prettier
+        working-directory: ./kyle_arahan_final_site
+        run: npm run format:check
+
+      - name: Run ESLint
+        working-directory: ./kyle_arahan_final_site
+        run: npm run lint
+
+      - name: Check TypeScript (if applicable)
+        working-directory: ./kyle_arahan_final_site
+        run: |
+          if [ -f "tsconfig.json" ]; then
+            npx tsc --noEmit
+          fi
+        continue-on-error: true
