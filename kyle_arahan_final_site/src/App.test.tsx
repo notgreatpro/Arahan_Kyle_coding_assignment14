@@ -11,7 +11,7 @@ test('renders portfolio heading', () => {
 test('renders navigation links', () => {
   render(<App />);
   // Use getByRole to specifically target navigation links
-  const aboutLink = s.getByRole('link', { name: /About/i });
+  const aboutLink = screen.getByRole('link', { name: /About/i });
   const workLink = screen.getByRole('link', { name: /^Work$/i });
   const skillsLink = screen.getByRole('link', { name: /Skills/i });
   expect(aboutLink).toBeInTheDocument();
