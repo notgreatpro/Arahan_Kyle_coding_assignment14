@@ -24,4 +24,12 @@ yarn-error.log*
 
 *storybook.log
 storybook-static
-.vscode/
+.vscode/# Environment variables
+.env
+.env.local
+.env.production
+
+# Secrets
+secrets/
+*.pem
+*.key
