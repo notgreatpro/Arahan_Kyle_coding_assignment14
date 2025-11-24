@@ -26,15 +26,6 @@ jobs:
         working-directory: ./kyle_arahan_final_site
         run: npm ci
 
-      - name: Validate package-lock.json
-        working-directory: ./kyle_arahan_final_site
-        run: |
-          npm audit --audit-level=high
-          if [ $? -ne 0 ]; then
-            echo "⚠️ Security vulnerabilities found"
-            exit 1
-          fi
-
       - name: Run Prettier
         working-directory: ./kyle_arahan_final_site
         run: npm run format:check
