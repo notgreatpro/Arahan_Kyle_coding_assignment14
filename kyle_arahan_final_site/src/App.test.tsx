@@ -27,6 +27,8 @@ test('renders work section', () => {
 
 test('renders developer subtitle', () => {
   render(<App />);
-  const subtitle = screen.getByText(/Full-Stack Web Developer & RRC Polytechnic Student/i);
+  const subtitle = screen.getByText(
+    /Full-Stack Web Developer & RRC Polytechnic Student/i
+  );
   expect(subtitle).toBeInTheDocument();
 });
