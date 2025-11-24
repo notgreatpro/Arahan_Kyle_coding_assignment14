@@ -1,16 +1,16 @@
-# Kyle Arahan - Component Library (Assignment 13)
+# Kyle Arahan - FInal Project Portfolio(Assignment 14)
 
-## 📘 Project Overview
+##  Project Overview
 
-This project is a **React + Storybook component library** built using **TypeScript**.  
-It includes reusable and styled UI components such as:
+This is my final portfolio website showcasing the coursework and projects I've completed throughout my program at RRC Polytechnic. The site is built with React, TypeScript, and deployed using Docker.
 
-- Button
-- Label
-- Dropdown
-- RadioButton
-- Image
-- HeroImage
+The portfolio includes:
+
+- Basic Information - About me, contact details
+- My Projects - GreatPro's BookStore, Genshin Explorer, Component Library, and CI/CD Pipeline
+- Skills - Languages, frameworks, tools, and development practices
+- Resources - Learning materials and documentation
+- Developer Setup - VS Code configuration, terminal setup, and preferred fonts
 
 Storybook is used for **visual testing** and **component documentation**.  
 The entire application is **containerized using Docker** and runs on **localhost:8018**.
@@ -43,7 +43,7 @@ To get started setup this assignment, please follow the steps below:
 2. Enter your directory to your container
 
 ```bash
-cd LastName_FirstName_coding_assignment13
+cd LastName_FirstName_coding_assignment14
 ````
 
 (Note: Change LastName and First Name to your Name)
@@ -51,7 +51,7 @@ cd LastName_FirstName_coding_assignment13
 3.  Enter your workdir
 
 ```bash
-cd kyle_arahan_ui_garden
+cd kyle_arahan_final_site
 ```
 
 ### Running on Docker in localhost
@@ -61,7 +61,7 @@ Once you already have both container and workdir on your directory, you can begi
 1. Run this docker code to build your container
 
 ```bash
-docker build -t arahan_kyle_coding_assignment13 .
+docker build -t arahan_kyle_coding_assignment14 .
 
 ```
 
@@ -70,7 +70,7 @@ You'll see docker will now build your container
 2. After your docker has build your container, you can run your container
 
 ````bash
-docker run -d -p 8018:80 --name arahan_kyle_coding_assignment13 arahan_kyle_coding_assignment13
+docker run -d -p 5575:5575 --name arahan_kyle_coding_assignment14 arahan_kyle_coding_assignment14
 
 
 Note: You'll notice that after you run this code, you'll see this on your command prompt:
@@ -83,7 +83,7 @@ This means your docker is now running on your localhost. This will change every 
 3. You can now open your broswer and input your localhost:s
 
 ```bash
-http://127.0.0.1:8081
+http://localhost:5575
 ````
 
 (Note: If your localhost says: **Site cant be reached** it means your container cant run to your localhost due to reasons:
@@ -102,7 +102,7 @@ Heres the command you can help run/stop your container.
 To stop your container, run this code to your command prompt:
 
 ```bash
-docker stop arahan_kyle_coding_assignment13
+docker stop arahan_kyle_coding_assignment14
 ```
 
 ### Start container
@@ -110,7 +110,7 @@ docker stop arahan_kyle_coding_assignment13
 To start your container, run this code:
 
 ```bash
-docker start arahan_kyle_coding_assignment13
+docker start arahan_kyle_coding_assignment14
 ```
 
 ### Remove container
@@ -118,5 +118,5 @@ docker start arahan_kyle_coding_assignment13
 To remove your container, run this code:
 
 ```bash
-docker rm arahan_kyle_coding_assignment13
+docker rm arahan_kyle_coding_assignment14
 ```
