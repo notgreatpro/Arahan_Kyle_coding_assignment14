@@ -1,6 +1,6 @@
 # Kyle Arahan - FInal Project Portfolio(Assignment 14)
 
-##  Project Overview
+## Project Overview
 
 This is my final portfolio website showcasing the coursework and projects I've completed throughout my program at RRC Polytechnic. The site is built with React, TypeScript, and deployed using Docker.
 
