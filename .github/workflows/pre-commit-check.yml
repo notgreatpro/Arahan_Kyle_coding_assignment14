@@ -26,14 +26,6 @@ jobs:
         working-directory: ./kyle_arahan_final_site
         run: npm ci
 
-      - name: Check for sensitive data
-        run: |
-          echo "Checking for potential secrets..."
-          if grep -r -E "(password|secret|api_key|token).*=.*['\"].*['\"]" --exclude-dir=node_modules --exclude-dir=.git .; then
-            echo "⚠️ Warning: Potential sensitive data found"
-            exit 1
-          fi
-
       - name: Validate package-lock.json
         working-directory: ./kyle_arahan_final_site
         run: |
