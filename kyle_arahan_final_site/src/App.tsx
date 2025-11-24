@@ -32,7 +32,7 @@ function App() {
       <section id="about" className="hero">
         <div className="hero-content">
           <h1 className="hero-title">Hi, I&apos;m Kyle Arahan</h1>
-          <p className="hero-subtitle">Full-Stack Developer & Student</p>
+          <p className="hero-subtitle">Full-Stack Web Developer & RRC Polytechnic Student</p>
           <p className="hero-description">
             Welcome to my portfolio! I&apos;m a passionate developer currently
             pursuing my studies in web development. This portfolio showcases the
@@ -40,13 +40,13 @@ function App() {
           </p>
           <div className="hero-contact">
             <p>
-              <strong>Email:</strong> kyle.arahan@example.com
+              <strong>Email:</strong> kylejzarahan@gmail.com
             </p>
             <p>
-              <strong>GitHub:</strong> github.com/kylearahan
+              <strong>GitHub:</strong> https://github.com/notgreatpro
             </p>
             <p>
-              <strong>LinkedIn:</strong> linkedin.com/in/kylearahan
+              <strong>LinkedIn:</strong> https://www.linkedin.com/in/kyle-arahan-174644380/
             </p>
           </div>
         </div>
@@ -55,37 +55,35 @@ function App() {
       {/* Work Section */}
       <section id="work" className="work-section">
         <div className="container">
-          <h2 className="section-title">My Work</h2>
+          <h2 className="section-title">My Projects</h2>
           <div className="work-grid">
             {/* Project 1 */}
             <div className="work-card">
               <div className="work-image">
                 <img
-                  src="https://via.placeholder.com/400x250/4A90E2/ffffff?text=Component+Library"
+                  src="../src/public/GreatProsBookStore.png"
                   alt="Component Library"
                 />
               </div>
               <div className="work-content">
-                <h3 className="work-title">React Component Library</h3>
+                <h3 className="work-title">GreatPro's BookStore</h3>
                 <p className="work-description">
-                  A comprehensive component library built with React,
-                  TypeScript, and Storybook. Features reusable UI components
-                  including buttons, cards, forms, and more with full
-                  documentation.
+                  A book store that uses HTML, CSS, and Javascript incuding a Home page, Store page and a Contact Page.
+                  This project is made during Wev Development 1 course to use the knowledge of the fundamental languages to build
+                  a simple wesbites for users.
                 </p>
                 <a
-                  href="https://github.com/kylearahan/component-library"
+                  href="https://notgreatpro.github.io/Web-Dev_Final_Project-GreatPro-s-BookStore/"
                   className="work-link"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  View Project →
+                  View Website →
                 </a>
                 <div className="tech-list">
-                  <span className="tech-tag">React</span>
-                  <span className="tech-tag">TypeScript</span>
-                  <span className="tech-tag">Storybook</span>
-                  <span className="tech-tag">CSS3</span>
+                  <span className="tech-tag">HTML</span>
+                  <span className="tech-tag">CSS</span>
+                  <span className="tech-tag">Javascript</span>
                 </div>
               </div>
             </div>
