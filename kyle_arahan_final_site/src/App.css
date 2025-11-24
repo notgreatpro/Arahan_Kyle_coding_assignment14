@@ -285,11 +285,6 @@ section {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
-.resource-icon {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-}
-
 .resource-title {
   font-size: 1.3rem;
   margin-bottom: 1rem;

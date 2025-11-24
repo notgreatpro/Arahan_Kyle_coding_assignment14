@@ -21,12 +21,12 @@ test('renders navigation links', () => {
 
 test('renders work section', () => {
   render(<App />);
-  const workSection = screen.getByText(/My Work/i);
+  const workSection = screen.getByText(/My Projects/i);
   expect(workSection).toBeInTheDocument();
 });
 
 test('renders developer subtitle', () => {
   render(<App />);
-  const subtitle = screen.getByText(/Full-Stack Developer & Student/i);
+  const subtitle = screen.getByText(/Full-Stack Web Developer & RRC Polytechnic Student/i);
   expect(subtitle).toBeInTheDocument();
 });

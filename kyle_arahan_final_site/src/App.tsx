@@ -32,7 +32,9 @@ function App() {
       <section id="about" className="hero">
         <div className="hero-content">
           <h1 className="hero-title">Hi, I&apos;m Kyle Arahan</h1>
-          <p className="hero-subtitle">Full-Stack Web Developer & RRC Polytechnic Student</p>
+          <p className="hero-subtitle">
+            Full-Stack Web Developer & RRC Polytechnic Student
+          </p>
           <p className="hero-description">
             Welcome to my portfolio! I&apos;m a passionate developer currently
             pursuing my studies in web development. This portfolio showcases the
@@ -46,7 +48,8 @@ function App() {
               <strong>GitHub:</strong> https://github.com/notgreatpro
             </p>
             <p>
-              <strong>LinkedIn:</strong> https://www.linkedin.com/in/kyle-arahan-174644380/
+              <strong>LinkedIn:</strong>{' '}
+              https://www.linkedin.com/in/kyle-arahan-174644380/
             </p>
           </div>
         </div>
@@ -60,17 +63,15 @@ function App() {
             {/* Project 1 */}
             <div className="work-card">
               <div className="work-image">
-                <img
-                  src="../src/public/GreatProsBookStore.png"
-                  alt="Component Library"
-                />
+                <img src="/GreatProsBookStore.png" alt="GreatPros BookStore" />
               </div>
               <div className="work-content">
-                <h3 className="work-title">GreatPro's BookStore</h3>
+                <h3 className="work-title">GreatPros BookStore</h3>
                 <p className="work-description">
-                  A book store that uses HTML, CSS, and Javascript incuding a Home page, Store page and a Contact Page.
-                  This project is made during Wev Development 1 course to use the knowledge of the fundamental languages to build
-                  a simple wesbites for users.
+                  A book store that uses HTML, CSS, and Javascript incuding a
+                  Home page, Store page and a Contact Page. This project is made
+                  during Wev Development 1 course to use the knowledge of the
+                  fundamental languages to build a simple wesbites for users.
                 </p>
                 <a
                   href="https://notgreatpro.github.io/Web-Dev_Final_Project-GreatPro-s-BookStore/"
@@ -91,20 +92,24 @@ function App() {
             {/* Project 2 */}
             <div className="work-card">
               <div className="work-image">
-                <img
-                  src="https://via.placeholder.com/400x250/50C878/ffffff?text=CI/CD+Pipeline"
-                  alt="CI/CD Pipeline"
-                />
+                <img src="/GenshinExplorer.png" alt="Genshin Explorer" />
               </div>
               <div className="work-content">
-                <h3 className="work-title">CI/CD Pipeline Implementation</h3>
+                <h3 className="work-title">Genshin Explorer Website</h3>
                 <p className="work-description">
-                  Implemented a complete CI/CD pipeline using GitHub Actions
-                  with automated testing, linting (ESLint), code formatting
-                  (Prettier), and pre-commit hooks using Husky.
+                  Genshin Explorer is a website that specializes for users to
+                  check their favourite Genshin characters as well as comment on
+                  them. It features an admin role with enchanced CRUD to create,
+                  update, edit and delete certain characters from the database.
+                  The website includes a functional search button/serach
+                  filters, user login/sign up as well as customize their
+                  profiles. Unfortunately this website requires Xampp in order
+                  to function meaning you cant see this website live. However
+                  I&apos;ll send a link to the Github Repository regarding this
+                  instead.
                 </p>
                 <a
-                  href="https://github.com/kylearahan/cicd-pipeline"
+                  href="https://github.com/notgreatpro/Web-Dev-2-Project"
                   className="work-link"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -112,11 +117,12 @@ function App() {
                   View Project →
                 </a>
                 <div className="tech-list">
-                  <span className="tech-tag">GitHub Actions</span>
-                  <span className="tech-tag">ESLint</span>
-                  <span className="tech-tag">Prettier</span>
-                  <span className="tech-tag">Husky</span>
-                  <span className="tech-tag">Jest</span>
+                  <span className="tech-tag">GitHub</span>
+                  <span className="tech-tag">PHP</span>
+                  <span className="tech-tag">HTML</span>
+                  <span className="tech-tag">CSS</span>
+                  <span className="tech-tag">PHPMyAdmin</span>
+                  <span className="tech-tag">GitHub Git</span>
                 </div>
               </div>
             </div>
@@ -125,19 +131,25 @@ function App() {
             <div className="work-card">
               <div className="work-image">
                 <img
-                  src="https://via.placeholder.com/400x250/9B59B6/ffffff?text=Docker+Deployment"
-                  alt="Docker Deployment"
+                  src="/GenshinImpactArchives.png"
+                  alt="Genshin Impact Archives"
                 />
               </div>
               <div className="work-content">
-                <h3 className="work-title">Dockerized Web Application</h3>
+                <h3 className="work-title">Genshin Impact Archives</h3>
                 <p className="work-description">
-                  Created production-ready Docker containers for React
-                  applications with optimized builds, multi-stage builds, and
-                  proper configuration for deployment.
+                  Genshin Impact Archives is a Rails website focusing on Genshin
+                  characters in-game stats taken from the API and the csv file.
+                  Each characters has its own stats that users can explore with
+                  muliple character types with interactive search button with a
+                  pagination and they can view the characters too. This website
+                  was created for Agile course to foucs on Ruby on Rails and
+                  implemented PostgreSQL. Same with the Genshin Explorer
+                  Website, this would not be shown live and the alternatives are
+                  my repository regarding this.
                 </p>
                 <a
-                  href="https://github.com/kylearahan/docker-app"
+                  href="https://github.com/notgreatpro/teyvat_archives"
                   className="work-link"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -145,10 +157,11 @@ function App() {
                   View Project →
                 </a>
                 <div className="tech-list">
-                  <span className="tech-tag">Docker</span>
-                  <span className="tech-tag">Nginx</span>
-                  <span className="tech-tag">React</span>
-                  <span className="tech-tag">Node.js</span>
+                  <span className="tech-tag">Ruby on Rails</span>
+                  <span className="tech-tag">API</span>
+                  <span className="tech-tag">PostgreSQL</span>
+                  <span className="tech-tag">Gemfile</span>
+                  <span className="tech-tag">CSV File</span>
                 </div>
               </div>
             </div>
@@ -175,8 +188,9 @@ function App() {
                 <span className="skill-tag">React.js</span>
                 <span className="skill-tag">HTML5</span>
                 <span className="skill-tag">CSS3</span>
-                <span className="skill-tag">Node.js</span>
-                <span className="skill-tag">Express.js</span>
+                <span className="skill-tag">PHPMyAdmin</span>
+                <span className="skill-tag">Ruby On Rails</span>
+                <span className="skill-tag">PostgreSQL</span>
               </div>
             </div>
 
@@ -187,7 +201,6 @@ function App() {
                 <span className="skill-tag">Docker</span>
                 <span className="skill-tag">GitHub Actions</span>
                 <span className="skill-tag">Storybook</span>
-                <span className="skill-tag">Jest</span>
                 <span className="skill-tag">ESLint</span>
                 <span className="skill-tag">Prettier</span>
                 <span className="skill-tag">Husky</span>
@@ -224,7 +237,6 @@ function App() {
 
           <div className="resources-grid">
             <div className="resource-card">
-              <div className="resource-icon">📚</div>
               <h3 className="resource-title">React Documentation</h3>
               <p className="resource-summary">
                 The official React documentation - an essential resource for
@@ -241,7 +253,6 @@ function App() {
             </div>
 
             <div className="resource-card">
-              <div className="resource-icon">📖</div>
               <h3 className="resource-title">MDN Web Docs</h3>
               <p className="resource-summary">
                 Comprehensive documentation for HTML, CSS, and JavaScript. The
@@ -258,7 +269,6 @@ function App() {
             </div>
 
             <div className="resource-card">
-              <div className="resource-icon">🐳</div>
               <h3 className="resource-title">Docker Documentation</h3>
               <p className="resource-summary">
                 Official Docker documentation covering containerization, best
@@ -275,7 +285,6 @@ function App() {
             </div>
 
             <div className="resource-card">
-              <div className="resource-icon">🔧</div>
               <h3 className="resource-title">GitHub Actions</h3>
               <p className="resource-summary">
                 Learn about CI/CD automation with GitHub Actions. Build, test,
@@ -292,7 +301,6 @@ function App() {
             </div>
 
             <div className="resource-card">
-              <div className="resource-icon">📘</div>
               <h3 className="resource-title">TypeScript Handbook</h3>
               <p className="resource-summary">
                 The official TypeScript handbook - learn about static typing and
@@ -309,7 +317,6 @@ function App() {
             </div>
 
             <div className="resource-card">
-              <div className="resource-icon">🎨</div>
               <h3 className="resource-title">Storybook</h3>
               <p className="resource-summary">
                 Build and document UI components in isolation. Essential for
@@ -496,7 +503,7 @@ function App() {
       <footer className="footer">
         <div className="container">
           <p>
-            &copy; 2024 Kyle Arahan. Built with React, TypeScript, and Docker.
+            &copy; 2025 Kyle Arahan. Built with React, TypeScript, and Docker.
           </p>
           <p>Assignment 14 - Final Portfolio Project</p>
         </div>
