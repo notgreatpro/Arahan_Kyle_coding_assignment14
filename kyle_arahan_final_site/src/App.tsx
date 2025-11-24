@@ -31,7 +31,7 @@ function App() {
       {/* Hero Section - Basic Information */}
       <section id="about" className="hero">
         <div className="hero-content">
-          <h1 classNa="hero-title">Hi, I&apos;m Kyle Arahan</h1>
+          <h1 className="hero-title">Hi, I&apos;m Kyle Arahan</h1>
           <p className="hero-subtitle">Full-Stack Developer & Student</p>
           <p className="hero-description">
             Welcome to my portfolio! I&apos;m a passionate developer currently
