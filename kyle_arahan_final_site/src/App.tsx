@@ -119,7 +119,7 @@ function App() {
                 <div className="tech-list">
                   <span className="tech-tag">GitHub</span>
                   <span className="tech-tag">PHP</span>
-                  <span className="tech-tag">HTML</span>
+                  <span className=>HTML</span>
                   <span className="tech-tag">CSS</span>
                   <span className="tech-tag">PHPMyAdmin</span>
                   <span className="tech-tag">GitHub Git</span>
